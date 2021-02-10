@@ -3,8 +3,13 @@
 
 #include <gtest/gtest.h>
 
-TEST(RomanNumerals, acceptance_test)
+#include <string>
+
+using namespace kata::roman_numerals;
+
+TEST(RomanNumeralConverter, DISABLED_acceptance_test)
 {
-    // TODO Replace with an acceptance test relevant for this kata
-	EXPECT_EQ(42, kata::roman_numerals::doSomething());
+   int arabic = 4746;
+   std::string roman = "MMMMDCCXLVI";
+   EXPECT_EQ(roman, arabicToRoman(arabic));
 }
