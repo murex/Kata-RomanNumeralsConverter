@@ -1,0 +1,72 @@
+cmake_minimum_required(VERSION 3.19.3)
+
+project(Kata-RomanNumeralsConverter CXX)
+
+set(CMAKE_CXX_STANDARD 14)
+enable_testing()
+
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib CACHE PATH "Where to place compiled static libraries.")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib CACHE PATH "Where to place compiled shared libraries.")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin CACHE PATH "Where to place compiled executables.")
+
+# We use CPM for 3rd-party dependencies management
+include(cmake/CPM.cmake)
+include(cmake/FindGoogleTest.cmake)
+# ApprovalTests (for Golden Master tests) -->
+# Uncomment if the kata is using it. Remove otherwise
+#include(cmake/FindApprovalTests.cmake)
+
+add_library(Kata-RomanNumeralsConverter-shared SHARED)
+
+target_compile_definitions(Kata-RomanNumeralsConverter-shared PRIVATE ROMAN_NUMERALS_EXPORTS)
+
+target_sources(Kata-RomanNumeralsConverter-shared
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/kata/roman_numerals/RomanNumerals.cpp
+    PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}/include/kata/roman_numerals/RomanNumerals.hpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/include/kata/roman_numerals/config.hpp
+)
+
+target_include_directories(Kata-RomanNumeralsConverter-shared
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/src
+    PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
+add_executable(Kata-RomanNumeralsConverter-test)
+
+target_sources(Kata-RomanNumeralsConverter-test
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/test/RomanNumeralsTest.cpp
+)
+
+target_link_libraries(Kata-RomanNumeralsConverter-test
+    PRIVATE
+        Kata-RomanNumeralsConverter-shared
+        # Uncomment if using ApprovalTests, remove otherwise
+        # ApprovalTests
+        gtest_main)
+
+add_test(NAME ctest-Kata-RomanNumeralsConverter COMMAND Kata-RomanNumeralsConverter-test)
+
+add_custom_target(Docs
+    SOURCES
+        ../README.md
+        ../QuickRetrospective.md)
+
+set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT Kata-RomanNumeralsConverter-test)
+set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY XCODE_STARTUP_PROJECT Kata-RomanNumeralsConverter-test)
+
+set_property(TARGET Kata-RomanNumeralsConverter-shared PROPERTY FOLDER "Kata")
+set_property(TARGET Kata-RomanNumeralsConverter-test PROPERTY FOLDER "Kata")
+set_property(TARGET Docs PROPERTY FOLDER "Kata")
+
+set_property(TARGET gtest gtest_main PROPERTY FOLDER "Third-Party/GoogleTest")
+# Uncomment if using ApprovalTests, remove otherwise
+# set_property(TARGET ApprovalTests PROPERTY FOLDER "Third-Party")
+
+set_property(GLOBAL PROPERTY PREDEFINED_TARGETS_FOLDER "CMake Generated")
