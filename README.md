@@ -65,3 +65,13 @@ Basic TDD & Pair Programming
 
 [![Java](./images/LanguageJava.png)](./java)
 [![C++](./images/LanguageCpp.png)](./cpp)
+
+## License
+
+The `Kata-RomanNumeralsConverter` and the accompanying materials are made available
+under the terms of the MIT License ([here](LICENSE.md)) which accompanies this
+distribution, and is available at the Open Source site [here](https://opensource.org/licenses/MIT)
+
+## Acknowledgements
+
+See [ACKNOWLEDGEMENTS.md](./ACKNOWLEDGEMENTS.md) for more information.
