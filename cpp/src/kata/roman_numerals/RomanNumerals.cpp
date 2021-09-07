@@ -3,6 +3,8 @@
 
 #include <string>
 
+namespace com {
+namespace murex {
 namespace kata {
 namespace roman_numerals {
 
@@ -13,3 +15,6 @@ std::string arabicToRoman(int arabic)
 
 } // namespace roman_numerals
 } // namespace kata
+} // namespace murex
+} // namespace com
+

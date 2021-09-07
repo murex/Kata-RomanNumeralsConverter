@@ -5,7 +5,7 @@
 
 #include <string>
 
-using namespace kata::roman_numerals;
+using namespace com::murex::kata::roman_numerals;
 
 TEST(RomanNumeralConverter, DISABLED_acceptance_test)
 {
