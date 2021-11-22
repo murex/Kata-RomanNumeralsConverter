@@ -1,6 +1,6 @@
 # Roman Numerals Converter
 
-[![Kata Image](images/RomanNumerals.png)](https://storage.needpix.com/rsynced_images/numerals-35937_1280.png)
+![Kata Image](images/RomanNumerals.png) <br>
 Image by [Clker-Free-Vector-Images](https://pixabay.com/it/users/clker-free-vector-images-3736/) on [Pixabay](https://pixabay.com/it/vectors/sistema-di-numerazione-romano-numero-35937/)
 
 ## Description
@@ -30,6 +30,18 @@ Available [here](http://codingdojo.org/kata/RomanNumerals/)
 | 99 | XCIX | 90(XC) + 9(IX) |
 | 47 | XLVII | 40(XL) + 7(VII) |
 
+## Getting Started
+
+### Running the kata using TCR
+
+- [Java](./java/GETTING_STARTED_TCR.md)
+- [C++](./cpp/GETTING_STARTED_TCR.md)
+
+### Running the kata using a standard approach
+
+- [Java](./java/GETTING_STARTED.md)
+- [C++](./cpp/GETTING_STARTED.md)
+
 ## Session Quick Retrospective
 
 You can fill it from [here](./QuickRetrospective.md)
@@ -44,7 +56,6 @@ You can fill it from [here](./QuickRetrospective.md)
 
 ### General
 
-
 - [TCR (Test && Commit || Revert) wrapper](tcr/TCR.md) utility
 - Handy for any type of turn-based session: [Online Timer](https://agility.jahed.dev/)
 
@@ -56,7 +67,7 @@ You can fill it from [here](./QuickRetrospective.md)
 
 ### Topic
 
-Basic TDD & Pair Programming
+- Basic TDD & Pair Programming
 
 ### Focus Points
 
@@ -71,9 +82,9 @@ Basic TDD & Pair Programming
 
 ## License
 
-The `Kata-RomanNumeralsConverter` and the accompanying materials are made available
-under the terms of the MIT License ([here](LICENSE.md)) which accompanies this
-distribution, and is available at the Open Source site [here](https://opensource.org/licenses/MIT)
+`Kata-RomanNumeralsConverter` and the accompanying materials are made available
+under the terms of the [MIT License](./LICENSE.md) which accompanies this
+distribution, and is available at the [Open Source site](https://opensource.org/licenses/MIT)
 
 ## Acknowledgements
 
