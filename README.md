@@ -1,3 +1,9 @@
+[![Gradle](https://github.com/murex/Kata-RomanNumeralsConverter/actions/workflows/gradle.yml/badge.svg)](https://github.com/murex/Kata-RomanNumeralsConverter/actions/workflows/gradle.yml)
+[![Maven](https://github.com/murex/Kata-RomanNumeralsConverter/actions/workflows/maven.yml/badge.svg)](https://github.com/murex/Kata-RomanNumeralsConverter/actions/workflows/maven.yml)
+[![CMake](https://github.com/murex/Kata-RomanNumeralsConverter/actions/workflows/cmake.yml/badge.svg)](https://github.com/murex/Kata-RomanNumeralsConverter/actions/workflows/cmake.yml)
+[![Check Markdown links](https://github.com/murex/Kata-RomanNumeralsConverter/actions/workflows/markdown-link-check.yml/badge.svg)](https://github.com/murex/Kata-RomanNumeralsConverter/actions/workflows/markdown-link-check.yml)
+[![Add contributors](https://github.com/murex/Kata-RomanNumeralsConverter/actions/workflows/contributors.yml/badge.svg)](https://github.com/murex/Kata-RomanNumeralsConverter/actions/workflows/contributors.yml)
+
 # Roman Numerals Converter
 
 ![Kata Image](images/RomanNumerals.png) <br>
