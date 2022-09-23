@@ -22,6 +22,6 @@ SOFTWARE.
 
 package roman_numerals
 
-func doSomething() int {
-	return 42
+func arabicToRoman(arabic int) string {
+	return ""
 }
