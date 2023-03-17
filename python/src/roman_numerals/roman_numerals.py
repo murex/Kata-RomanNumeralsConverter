@@ -18,5 +18,5 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-def arabic_to_roman(arabic):
+def arabic_to_roman(arabic: int) -> str:
     return ''
