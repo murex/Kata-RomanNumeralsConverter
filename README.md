@@ -44,6 +44,7 @@ Available [here](http://codingdojo.org/kata/RomanNumerals/)
 - [C++](cpp/GETTING_STARTED.md)
 - [Go](go/GETTING_STARTED.md)
 - [Python](python/GETTING_STARTED.md)
+- [Typescript](typescript/GETTING_STARTED.md)
 
 ## Session Quick Retrospective
 
@@ -86,6 +87,7 @@ You can fill it from [here](QuickRetrospective.md)
 - [C++](cpp)
 - [Go](go)
 - [Python](python)
+- [Typescript](typescript)
 
 ## License
 
