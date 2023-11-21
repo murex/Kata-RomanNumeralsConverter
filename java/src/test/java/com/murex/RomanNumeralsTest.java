@@ -23,14 +23,15 @@ SOFTWARE.
 package com.murex;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-public class RomanNumeralsTest {
-    
+class RomanNumeralsTest {
+
     @Disabled
     @Test
-    public void acceptance_test() {
+    void acceptance_test() {
         int arabic = 4746;
         String roman = "MMMMDCCXLVI";
         assertEquals(roman, RomanNumerals.arabicToRoman(arabic));
