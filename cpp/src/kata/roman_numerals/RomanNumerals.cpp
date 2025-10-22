@@ -25,18 +25,12 @@ SOFTWARE.
 
 #include <string>
 
-namespace com {
-namespace murex {
-namespace kata {
-namespace roman_numerals {
+namespace com::murex::kata::roman_numerals {
 
 std::string arabicToRoman(int arabic)
 {
    return "";
 }
 
-} // namespace roman_numerals
-} // namespace kata
-} // namespace murex
-} // namespace com
+} // namespace com::murex::kata::roman_numerals
 
